@@ -16,12 +16,12 @@ public class Main_Frame extends JFrame{
         this.setLayout(new GridBagLayout());
 
         JButton B1 = new JButton("Inventory");
-        JButton B2 = new JButton("BS TV");
+        JButton B2 = new JButton("BTV");
         JButton B3 = new JButton("Manuals");
-        JButton B4 = new JButton("Re Image");
+        JButton B4 = new JButton("Re-Image");
         JButton B5 = new JButton("Programs");
         JButton B6 = new JButton("101. 100 SRV");
-        JButton B7 = new JButton("Reeboot");
+        JButton B7 = new JButton("Reboot");
 
         B1.setCursor(new Cursor(Cursor.HAND_CURSOR));
         B2.setCursor(new Cursor(Cursor.HAND_CURSOR));
