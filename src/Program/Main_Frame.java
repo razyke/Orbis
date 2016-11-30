@@ -2,6 +2,8 @@ package Program;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Main_Frame extends JFrame{
 
@@ -39,9 +41,10 @@ public class Main_Frame extends JFrame{
         c.anchor = GridBagConstraints.NORTH;
         c.fill = GridBagConstraints.HORIZONTAL;
         c.insets = new Insets(1,2,3,4);
+        c.ipadx = 0;
+        c.ipady = 0;
 
-
-
+        B7.addActionListener( new Action());
 
         this.add(B1,new GridBagConstraints(0,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,0,0,50),0,0));
         this.add(B2,new GridBagConstraints(1,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,50,0,0),0,0));
@@ -55,5 +58,13 @@ public class Main_Frame extends JFrame{
         //new GridBagConstraints(0,1,1,1,0,1,GridBagConstraints.NORTHEAST,GridBagConstraints.HORIZONTAL,new Insets(2,2,2,2),0,0)
 
         this.setVisible(true);
+    }
+
+    public class Action implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            new Reboot();
+        }
     }
 }
