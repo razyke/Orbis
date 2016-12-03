@@ -1,9 +1,10 @@
-package Program;
+package Frames;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class Main_Frame extends JFrame{
 
@@ -31,7 +32,7 @@ public class Main_Frame extends JFrame{
         B6.setCursor(new Cursor(Cursor.HAND_CURSOR));
         B7.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
-        GridBagConstraints c = new GridBagConstraints();
+        /*GridBagConstraints c = new GridBagConstraints();
         c.gridx = 0;
         c.gridy = 0;
         c.gridwidth = 1;
@@ -43,8 +44,11 @@ public class Main_Frame extends JFrame{
         c.insets = new Insets(1,2,3,4);
         c.ipadx = 0;
         c.ipady = 0;
+        new GridBagConstraints(0,1,1,1,0,1,GridBagConstraints.NORTHEAST,GridBagConstraints.HORIZONTAL,new Insets(2,2,2,2),0,0)
+        */
 
-        B7.addActionListener( new Action());
+        B7.addActionListener( new Re());
+        B2.addActionListener(new TV());
 
         this.add(B1,new GridBagConstraints(0,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,0,0,50),0,0));
         this.add(B2,new GridBagConstraints(1,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,50,0,0),0,0));
@@ -55,16 +59,31 @@ public class Main_Frame extends JFrame{
         this.add(B7,new GridBagConstraints(0,3,3,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(0,0,0,0),0,0));
 
 
-        //new GridBagConstraints(0,1,1,1,0,1,GridBagConstraints.NORTHEAST,GridBagConstraints.HORIZONTAL,new Insets(2,2,2,2),0,0)
+
 
         this.setVisible(true);
     }
 
-    public class Action implements ActionListener{
+    public class Re implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e) {
             new Reboot();
+        }
+    }
+
+
+    public class TV implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                new BTV();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            } catch (ClassNotFoundException e1) {
+                e1.printStackTrace();
+            }
         }
     }
 }

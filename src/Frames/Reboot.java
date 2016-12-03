@@ -1,7 +1,7 @@
-package Program;
+package Frames;
 
 
-import Functional.Ping;
+import Functional.Functions;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +16,7 @@ public class Reboot extends JFrame {
 
     public Reboot() {
         super("Reboot");
-        this.setSize(600, 400);
+        this.setSize(300, 100);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
 
@@ -35,6 +35,8 @@ public class Reboot extends JFrame {
         c.insets = new Insets(0, 0, 0, 20);
         GridBagConstraints b = new GridBagConstraints();
         b.insets = new Insets(0,20,0,0);
+        ping.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        reboot.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         this.add(namePC, c);
         this.add(ping);
@@ -51,7 +53,7 @@ public class Reboot extends JFrame {
         public void actionPerformed(ActionEvent e) {
 
             try {
-                if (Ping.Online(namePC.getText()))
+                if (Functions.Online(namePC.getText()))
                     ping.setBackground(Color.GREEN);
                 else
                     ping.setBackground(Color.RED);
@@ -67,8 +69,8 @@ public class Reboot extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
-                if (Ping.Online(namePC.getText()))
-                Functional.Reboot.Rebooting(namePC.getText());
+                if (Functions.Online(namePC.getText()))
+                Functions.Rebooting(namePC.getText());
 
             } catch (IOException e1) {
             }
