@@ -38,14 +38,31 @@ public class BTV extends JFrame{
         save = new JButton("Save");
         save.addActionListener(new Asave());
 
+        JLabel Description = new JLabel();
+        Description.setText("В этом окне, вы можете перезагружать");
+        GridBagConstraints c = new GridBagConstraints();
+        Insets otstup = new Insets(0,0,100,0);
+        c.gridx = 0;
+        c.gridy = 0;
+        c.insets = otstup;
+        c.anchor = GridBagConstraints.NORTH;
 
 
-        this.add(chanels[0]);
-        this.add(chanels[1]);
-        this.add(chanels[2]);
-        this.add(chanels[3]);
-        this.add(chanels[4]);
-        this.add(save,new GridBagConstraints(0,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,0,0,50),0,0));
+        this.add(Description,c);
+        c.anchor= GridBagConstraints.CENTER;
+        otstup.set(0,0,20,0);
+        c.gridy++;
+        this.add(chanels[0],c);
+        c.gridy++;
+        this.add(chanels[1],c);
+        c.gridy++;
+        this.add(chanels[2],c);
+        c.gridy++;
+        this.add(chanels[3],c);
+        c.gridy++;
+        this.add(chanels[4],c);
+        c.gridy++;
+       this.add(save,c);
 
 
 

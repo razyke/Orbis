@@ -27,7 +27,7 @@ public class Reboot extends JFrame {
         ping.setBackground(Color.GRAY);
         ping.addActionListener(new PingListener());
 
-        ImageIcon re = new ImageIcon("C:\\reboot2.gif");
+        ImageIcon re = new ImageIcon("Media\\reboot2.png");
         reboot = new JButton("",re);
         reboot.addActionListener(new RebootListener());
 
