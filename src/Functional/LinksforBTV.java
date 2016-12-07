@@ -16,7 +16,7 @@ public class LinksforBTV implements Serializable {
 
     public static   String[] getLinks() throws IOException, ClassNotFoundException {
 
-        ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\BTV\\tv.dat"));
+        ObjectInputStream in = new ObjectInputStream(new FileInputStream("BTV\\tv.dat"));
         Object object = in.readObject();
         LinksforBTV links = (LinksforBTV)object;
         String[] tv = new String[5];
@@ -39,7 +39,7 @@ public class LinksforBTV implements Serializable {
         forsave.chanel4 = tv[3];
         forsave.manager = tv[4];
 
-        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("C:\\BTV\\tv.dat"));
+        ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("BTV\\tv.dat"));
         outputStream.writeObject(forsave);
         outputStream.close();
 

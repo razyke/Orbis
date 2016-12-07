@@ -1,12 +1,10 @@
 import Functional.LinksforBTV;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 
 
 public class trash {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
+
        /*LinksforBTV tv = new LinksforBTV();
         String arr[] = new String[5];
         String chanel1 = "wpet-w7e-d00541";
