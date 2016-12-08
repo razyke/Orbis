@@ -50,6 +50,7 @@ public class Main_Frame extends JFrame{
         B7.addActionListener( new Re());
         B2.addActionListener(new TV());
 
+
         this.add(B1,new GridBagConstraints(0,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,0,0,50),0,0));
         this.add(B2,new GridBagConstraints(1,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,50,0,0),0,0));
         this.add(B3,new GridBagConstraints(0,1,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(0,0,0,50),0,0));

@@ -1,3 +1,4 @@
+import Functional.Functions;
 import Functional.LinksforBTV;
 import java.io.IOException;
 
@@ -17,7 +18,7 @@ public class trash {
         arr[2] = chanel3;
         arr[3] = chanel4;
         arr[4] = manager;
-        tv.save(arr);*/
+        Functions.save(arr);*/
 
       // String[] lol =tv.getLinks();
        // System.out.println(lol[1]);

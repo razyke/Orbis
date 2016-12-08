@@ -1,6 +1,6 @@
 package Frames;
 
-import Functional.LinksforBTV;
+import Functional.Functions;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,37 +21,53 @@ public class BTV extends JFrame{
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
 
-        tv = LinksforBTV.getLinks();
-
+        tv = Functions.getLinks();
 
         chanels = new JTextField[5];
-
         for (int i=0;i<5;i++){
             chanels[i] = new JTextField(10);
         }
-
 
         for (int i=0; i<5;i++){
             chanels[i].setText(tv[i]);
         }
 
+        chanels[4].setEditable(false);
+
         save = new JButton("Save");
         save.addActionListener(new Asave());
+        ImageIcon re = new ImageIcon("Media\\reboot2.png");
+        JButton reboot1 = new JButton("",re);
+        JButton reboot2 = new JButton("",re);
+        JButton reboot3 = new JButton("",re);
+        JButton reboot4 = new JButton("",re);
+        JButton manager = new JButton("Manager");
+
+        reboot1.addActionListener(new Areboot1());
+        reboot2.addActionListener(new Areboot2());
+        reboot3.addActionListener(new Areboot3());
+        reboot4.addActionListener(new Areboot4());
+        manager.addActionListener(new Amanager());
+
+        JLabel admin = new JLabel("Админ.");
+        JLabel prod = new JLabel("Прод.");
+        JLabel lti = new JLabel("LTI.");
+        JLabel reseprion = new JLabel("Ресеп");
+
+
 
         JLabel Description = new JLabel();
-        Description.setText("В этом окне, вы можете перезагружать");
+        Description.setText("Перезагрузка каналов, сохранение при изменении + подключение к менеджеру");
         GridBagConstraints c = new GridBagConstraints();
-        Insets otstup = new Insets(0,0,100,0);
-        c.gridx = 0;
-        c.gridy = 0;
+        c.ipadx = 0;
+        c.ipady = 0;
+        Insets otstup = new Insets(0,0,50,0);
         c.insets = otstup;
-        c.anchor = GridBagConstraints.NORTH;
-
-
+        c.gridwidth=4;
         this.add(Description,c);
-        c.anchor= GridBagConstraints.CENTER;
-        otstup.set(0,0,20,0);
-        c.gridy++;
+        c.gridwidth=1;
+        c.gridy=2;
+        otstup.set(0,0,20,30);
         this.add(chanels[0],c);
         c.gridy++;
         this.add(chanels[1],c);
@@ -61,9 +77,30 @@ public class BTV extends JFrame{
         this.add(chanels[3],c);
         c.gridy++;
         this.add(chanels[4],c);
+        c.gridy=2;
+        c.gridx=1;
+        otstup.set(0,30,20,0);
+        this.add(admin,c);
         c.gridy++;
-       this.add(save,c);
+        this.add(prod,c);
+        c.gridy++;
+        this.add(lti,c);
+        c.gridy++;
+        this.add(reseprion,c);
 
+        c.gridy=2;
+        c.gridx=2;
+        this.add(reboot1,c);
+        c.gridy++;
+        this.add(reboot2,c);
+        c.gridy++;
+        this.add(reboot3,c);
+        c.gridy++;
+        this.add(reboot4,c);
+        c.gridy++;
+        this.add(save,c);
+        c.gridx--;
+        this.add(manager,c);
 
 
 
@@ -72,19 +109,79 @@ public class BTV extends JFrame{
     }
 
     public class Asave implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                    for (int i=0; i<5;i++)
+                 {
+                    tv[i] = chanels[i].getText();
+                 }
+                Functions.save(tv);
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
+
+    public class Areboot1 implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
-                for (int i=0; i<5;i++){
-                    tv[i] = chanels[i].getText();
-                }
-                LinksforBTV.save(tv);
+                if (Functions.Online(chanels[0].getText()))
+                    Functions.Rebooting(chanels[0].getText());
+
+            } catch (IOException e1) {
+            }
+        }
+    }
+
+    public class Areboot2 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                if (Functions.Online(chanels[1].getText()))
+                    Functions.Rebooting(chanels[1].getText());
+
+            } catch (IOException e1) {
+            }
+        }
+    }
+    public class Areboot3 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                if (Functions.Online(chanels[2].getText()))
+                    Functions.Rebooting(chanels[2].getText());
+            } catch (IOException e1) {
+            }
+
+        }
+    }
+    public class Areboot4 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                if (Functions.Online(chanels[3].getText()))
+                    Functions.Rebooting(chanels[3].getText());
+            } catch (IOException e1) {
+            }
+
+        }
+    }
+    public class Amanager implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            ProcessBuilder b = new ProcessBuilder("BTV\\m.cmd");
+            try {
+                b.start();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-
-
+            JFrame action = new JFrame("password");
+            action.add(new JTextField("targetvision1"));
+            action.setVisible(true);
+            action.pack();
         }
     }
 }
