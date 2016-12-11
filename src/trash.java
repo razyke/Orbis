@@ -1,10 +1,12 @@
 import Functional.Functions;
 import Functional.LinksforBTV;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class trash {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
        /*LinksforBTV tv = new LinksforBTV();
         String arr[] = new String[5];
@@ -22,6 +24,13 @@ public class trash {
 
       // String[] lol =tv.getLinks();
        // System.out.println(lol[1]);
+
+        //ProcessBuilder b = new ProcessBuilder("mstsc.exe");
+       // b.start();
+
+      // Functions.LoggOff101("cstsmirnd");
+
+
 
 
     }

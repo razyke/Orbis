@@ -1,1 +1,0 @@
-start C:\Users\cstsmirnd\IdeaProjects\Orbis\BTV\manager.rdp

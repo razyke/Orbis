@@ -11,7 +11,6 @@ import java.io.IOException;
 
 public class BTV extends JFrame{
     JTextField [] chanels;
-    JButton reboot;
     JButton save;
     String[]tv;
 
@@ -172,13 +171,13 @@ public class BTV extends JFrame{
     public class Amanager implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            ProcessBuilder b = new ProcessBuilder("BTV\\m.cmd");
+            ProcessBuilder b = new ProcessBuilder("mstsc.exe \"BTV\\manager.rdp\"");
             try {
                 b.start();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-            JFrame action = new JFrame("password");
+            JFrame action = new JFrame("use this");
             action.add(new JTextField("targetvision1"));
             action.setVisible(true);
             action.pack();

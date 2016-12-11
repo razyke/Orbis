@@ -2,6 +2,8 @@ package Functional;
 
 import java.io.*;
 import java.net.InetAddress;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by CSTSMIRND on 03.12.2016.
@@ -10,23 +12,23 @@ public class Functions {
 
 
     public static boolean Online(String name) throws IOException {
-        if ((InetAddress.getByName(name)).isReachable(5000)){
+        if ((InetAddress.getByName(name)).isReachable(5000)) {
             return true;
-        }else
+        } else
             return false;
     }
 
-    public static void Rebooting (String name) throws IOException {
-        String cmdComand = ("shutdown -r -t 1 -m \\\\"+name);
+    public static void Rebooting(String name) throws IOException {
+        String cmdComand = ("shutdown -r -t 1 -m \\\\" + name);
 
         Process go = Runtime.getRuntime().exec(cmdComand);
     }
 
 
-    public static   String[] getLinks() throws IOException, ClassNotFoundException {
+    public static String[] getLinks() throws IOException, ClassNotFoundException {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream("BTV\\tv.dat"));
         Object object = in.readObject();
-        LinksforBTV links = (LinksforBTV)object;
+        LinksforBTV links = (LinksforBTV) object;
         String[] tv = new String[5];
         tv[0] = links.chanel1;
         tv[1] = links.chanel2;
@@ -50,4 +52,37 @@ public class Functions {
         outputStream.close();
 
     }
-}
+
+    public static void LoggOff101(String name) throws IOException, InterruptedException {
+        ProcessBuilder cmd = new ProcessBuilder("100_101srv\\101.cmd");
+        cmd.start();
+        Thread.sleep(500);
+
+        BufferedReader reader = new BufferedReader(new FileReader("100_101srv\\101.txt"));
+        Map<Integer,String> users_id = new HashMap<>();
+        while (reader.ready()) {
+            String stroka = reader.readLine();
+            stroka = stroka.toLowerCase();
+            String user = stroka.substring(18, 33);
+            user = user.trim();
+            int id=0;
+
+            try {
+                id = Integer.parseInt(stroka.substring(41, 46).trim());
+            } catch (Exception e) {}
+            users_id.put(id,user);
+        }
+
+        int FID = -1;
+
+            for (Map.Entry<Integer,String> pair : users_id.entrySet()) {
+                if (name.equals(pair.getValue())) {
+                    FID = pair.getKey();
+                }
+            }
+            String comand = "logoff "+FID+ " /server:ruspet01-srv101";
+            Runtime.getRuntime().exec(comand);
+
+        }
+    }
+

@@ -1,0 +1,1 @@
+qwinsta /server:ruspet01-srv101> 100_101srv\101.txt
