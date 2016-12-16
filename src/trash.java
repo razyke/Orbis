@@ -1,6 +1,11 @@
 import Functional.Functions;
 import Functional.LinksforBTV;
+import com.sun.corba.se.spi.activation.ServerHelper;
+import com.sun.corba.se.spi.activation.ServerIdHelper;
+import com.sun.security.ntlm.Server;
+
 import java.io.IOException;
+import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +33,12 @@ public class trash {
         //ProcessBuilder b = new ProcessBuilder("mstsc.exe");
        // b.start();
 
-      // Functions.LoggOff101("cstsmirnd");
+      //Functions.LoggOff101("cstsmirnd");
+
+        //String lol = InetAddress.getByName("ruspet01-srv101");
+
+       // Functions.LoggOff101("z_petwmstm3610");
+
 
 
 

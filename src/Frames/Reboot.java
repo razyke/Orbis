@@ -25,11 +25,34 @@ public class Reboot extends JFrame {
 
         ping = new JButton("Ping");
         ping.setBackground(Color.GRAY);
-        ping.addActionListener(new PingListener());
+        ping.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(namePC.getText()))
+                        ping.setBackground(Color.GREEN);
+                    else
+                        ping.setBackground(Color.RED);
+                } catch (IOException e1) {
+                    ping.setBackground(Color.YELLOW);
+                }
+            }
+        });
 
         ImageIcon re = new ImageIcon("Media\\reboot2.png");
         reboot = new JButton("",re);
-        reboot.addActionListener(new RebootListener());
+        reboot.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(namePC.getText()))
+                        Functions.Rebooting(namePC.getText());
+
+                } catch (IOException e1) {
+                }
+            }
+        }
+        );
 
         GridBagConstraints c = new GridBagConstraints();
         c.insets = new Insets(0, 0, 0, 20);
@@ -44,36 +67,5 @@ public class Reboot extends JFrame {
 
 
         this.setVisible(true);
-    }
-
-
-    public class PingListener implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            try {
-                if (Functions.Online(namePC.getText()))
-                    ping.setBackground(Color.GREEN);
-                else
-                    ping.setBackground(Color.RED);
-            } catch (IOException e1) {
-                ping.setBackground(Color.YELLOW);
-            }
-
-        }
-    }
-
-    public class RebootListener implements ActionListener{
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                if (Functions.Online(namePC.getText()))
-                Functions.Rebooting(namePC.getText());
-
-            } catch (IOException e1) {
-            }
-        }
     }
 }

@@ -7,6 +7,15 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class Main_Frame extends JFrame{
+JButton B1;
+JButton B2;
+JButton B3;
+JButton B4;
+JButton B5;
+JButton B6;
+JButton B7;
+
+
 
     public Main_Frame(){
         super("Orbis");
@@ -16,13 +25,13 @@ public class Main_Frame extends JFrame{
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
 
-        JButton B1 = new JButton("Inventory");
-        JButton B2 = new JButton("BTV");
-        JButton B3 = new JButton("Manuals");
-        JButton B4 = new JButton("Re-Image");
-        JButton B5 = new JButton("Programs");
-        JButton B6 = new JButton("101. 100 SRV");
-        JButton B7 = new JButton("Reboot");
+        B1 = new JButton("Inventory");
+        B2 = new JButton("BTV");
+        B3 = new JButton("Manuals");
+        B4 = new JButton("Re-Image");
+        B5 = new JButton("Programs");
+        B6 = new JButton("101. 100 SRV");
+        B7 = new JButton("Reboot");
 
         B1.setCursor(new Cursor(Cursor.HAND_CURSOR));
         B2.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -47,8 +56,31 @@ public class Main_Frame extends JFrame{
         new GridBagConstraints(0,1,1,1,0,1,GridBagConstraints.NORTHEAST,GridBagConstraints.HORIZONTAL,new Insets(2,2,2,2),0,0)
         */
 
-        B7.addActionListener( new Re());
-        B2.addActionListener(new TV());
+       B7.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               new Reboot();
+           }
+       });
+       B2.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               try {
+                   new BTV();
+               } catch (IOException e1) {
+                   e1.printStackTrace();
+               } catch (ClassNotFoundException e1) {
+                   e1.printStackTrace();
+               }
+           }
+       });
+       B6.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               new srv();
+           }
+       });
+
 
 
         this.add(B1,new GridBagConstraints(0,0,1,1,0,1,GridBagConstraints.NORTH,GridBagConstraints.HORIZONTAL,new Insets(30,0,0,50),0,0));
@@ -63,28 +95,5 @@ public class Main_Frame extends JFrame{
 
 
         this.setVisible(true);
-    }
-
-    public class Re implements ActionListener{
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            new Reboot();
-        }
-    }
-
-
-    public class TV implements ActionListener{
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                new BTV();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            } catch (ClassNotFoundException e1) {
-                e1.printStackTrace();
-            }
-        }
     }
 }

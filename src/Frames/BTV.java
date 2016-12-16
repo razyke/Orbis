@@ -42,10 +42,50 @@ public class BTV extends JFrame{
         JButton reboot4 = new JButton("",re);
         JButton manager = new JButton("Manager");
 
-        reboot1.addActionListener(new Areboot1());
-        reboot2.addActionListener(new Areboot2());
-        reboot3.addActionListener(new Areboot3());
-        reboot4.addActionListener(new Areboot4());
+        reboot1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(chanels[0].getText()))
+                        Functions.Rebooting(chanels[0].getText());
+
+                } catch (IOException e1) {
+                }
+            }
+        });
+        reboot2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(chanels[1].getText()))
+                        Functions.Rebooting(chanels[1].getText());
+
+                } catch (IOException e1) {
+                }
+            }
+        });
+        reboot3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(chanels[2].getText()))
+                        Functions.Rebooting(chanels[2].getText());
+
+                } catch (IOException e1) {
+                }
+            }
+        });
+        reboot4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    if (Functions.Online(chanels[3].getText()))
+                        Functions.Rebooting(chanels[3].getText());
+
+                } catch (IOException e1) {
+                }
+            }
+        });
         manager.addActionListener(new Amanager());
 
         JLabel admin = new JLabel("Админ.");
@@ -122,52 +162,7 @@ public class BTV extends JFrame{
         }
     }
 
-    public class Areboot1 implements ActionListener{
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                if (Functions.Online(chanels[0].getText()))
-                    Functions.Rebooting(chanels[0].getText());
-
-            } catch (IOException e1) {
-            }
-        }
-    }
-
-    public class Areboot2 implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                if (Functions.Online(chanels[1].getText()))
-                    Functions.Rebooting(chanels[1].getText());
-
-            } catch (IOException e1) {
-            }
-        }
-    }
-    public class Areboot3 implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                if (Functions.Online(chanels[2].getText()))
-                    Functions.Rebooting(chanels[2].getText());
-            } catch (IOException e1) {
-            }
-
-        }
-    }
-    public class Areboot4 implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                if (Functions.Online(chanels[3].getText()))
-                    Functions.Rebooting(chanels[3].getText());
-            } catch (IOException e1) {
-            }
-
-        }
-    }
     public class Amanager implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {

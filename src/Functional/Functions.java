@@ -5,9 +5,7 @@ import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by CSTSMIRND on 03.12.2016.
- */
+
 public class Functions {
 
 
@@ -54,9 +52,11 @@ public class Functions {
     }
 
     public static void LoggOff101(String name) throws IOException, InterruptedException {
+
         ProcessBuilder cmd = new ProcessBuilder("100_101srv\\101.cmd");
         cmd.start();
-        Thread.sleep(500);
+
+        Thread.sleep(1500);
 
         BufferedReader reader = new BufferedReader(new FileReader("100_101srv\\101.txt"));
         Map<Integer,String> users_id = new HashMap<>();
@@ -81,6 +81,41 @@ public class Functions {
                 }
             }
             String comand = "logoff "+FID+ " /server:ruspet01-srv101";
+        System.out.println(comand);
+            Runtime.getRuntime().exec(comand);
+        }
+
+
+
+        public static void LoggOff837() throws IOException, InterruptedException{
+            String name = "petwmstw01";
+            ProcessBuilder cmd = new ProcessBuilder("100_101srv\\100.cmd");
+            cmd.start();
+            Thread.sleep(1500);
+
+            BufferedReader reader = new BufferedReader(new FileReader("100_101srv\\100.txt"));
+            Map<Integer,String> users_id = new HashMap<>();
+            while (reader.ready()) {
+                String stroka = reader.readLine();
+                stroka = stroka.toLowerCase();
+                String user = stroka.substring(18, 33);
+                user = user.trim();
+                int id=0;
+
+                try {
+                    id = Integer.parseInt(stroka.substring(41, 46).trim());
+                } catch (Exception e) {}
+                users_id.put(id,user);
+            }
+
+            int FID = -1;
+
+            for (Map.Entry<Integer,String> pair : users_id.entrySet()) {
+                if (name.equals(pair.getValue())) {
+                    FID = pair.getKey();
+                }
+            }
+            String comand = "logoff "+FID+ " /server:ruspet01-srv100";
             Runtime.getRuntime().exec(comand);
 
         }
