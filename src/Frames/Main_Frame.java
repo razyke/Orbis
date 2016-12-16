@@ -80,6 +80,12 @@ JButton B7;
                new srv();
            }
        });
+        B4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Reimage();
+            }
+        });
 
 
 

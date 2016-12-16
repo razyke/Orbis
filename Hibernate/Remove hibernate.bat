@@ -1,0 +1,1 @@
+psexec -c /accepteula @hiblist.txt powercfg.bat
