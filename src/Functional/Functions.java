@@ -2,6 +2,7 @@ package Functional;
 
 import java.io.*;
 import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -119,5 +120,25 @@ public class Functions {
             Runtime.getRuntime().exec(comand);
 
         }
+
+        public static void saverunHyberText(String[] arr) throws IOException {
+
+            FileWriter fileWriter = new FileWriter("Hibernate\\hiblist.txt");
+
+
+
+            for (int i=0;i<arr.length;i++) {
+                fileWriter.write(arr[i]);
+                fileWriter.write(System.lineSeparator());
+            }
+
+            fileWriter.close();
+
+           // Runtime.getRuntime().exec("cmd /c Hibernate\\Remove hibernate.bat");
+            ProcessBuilder go = new ProcessBuilder("psexec -c /accepteula @hiblist.txt powercfg.bat");
+            go.start();
+        }
+
+        //public static
     }
 
