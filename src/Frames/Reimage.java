@@ -17,7 +17,7 @@ public class Reimage extends JFrame{
     JLabel description;
 
     public Reimage(){
-        super("Re-image");
+        super("After re-image");
         this.setSize(600,400);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());

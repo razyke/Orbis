@@ -1,0 +1,1 @@
+"\\RUSPET01-SRV101\C$\Program Files (x86)\Business Objects\BusinessObjects Enterprise 12.0\win32_x86\crystalras.exe" -service -name RUSPET01-SRV101.RAS   -ipport -restart

@@ -19,7 +19,7 @@ JButton B7;
 
     public Main_Frame(){
         super("Orbis");
-        this.setSize(600,400);
+        this.setSize(500,300);
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setResizable(false);

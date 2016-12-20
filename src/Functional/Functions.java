@@ -1,8 +1,8 @@
 package Functional;
 
+import java.awt.*;
 import java.io.*;
 import java.net.InetAddress;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +20,7 @@ public class Functions {
     public static void Rebooting(String name) throws IOException {
         String cmdComand = ("shutdown -r -t 1 -m \\\\" + name);
 
-        Process go = Runtime.getRuntime().exec(cmdComand);
+        Runtime.getRuntime().exec(cmdComand);
     }
 
 
@@ -127,18 +127,25 @@ public class Functions {
 
 
 
+
             for (int i=0;i<arr.length;i++) {
                 fileWriter.write(arr[i]);
                 fileWriter.write(System.lineSeparator());
             }
 
             fileWriter.close();
+            //"\\RUSPET01-SRV101\C$\Program Files (x86)\Business Objects\BusinessObjects Enterprise 12.0\win32_x86\crystalras.exe" -service -name RUSPET01-SRV101.RAS   -ipport -restart
 
-           // Runtime.getRuntime().exec("cmd /c Hibernate\\Remove hibernate.bat");
-            ProcessBuilder go = new ProcessBuilder("psexec -c /accepteula @hiblist.txt powercfg.bat");
-            go.start();
+
+            //ProcessBuilder cmd = new ProcessBuilder("Hibernate\\start.cmd");
+            //cmd.start();
+            File file=new File("Hibernate\\RH.cmd");
+            Desktop.getDesktop().open(file);
         }
 
-        //public static
+        public static void reportRestart() throws IOException {
+            ProcessBuilder cmd = new ProcessBuilder("100_101srv\\report.cmd");
+            cmd.start();
+        }
     }
 
