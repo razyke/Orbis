@@ -16,7 +16,7 @@ public class BTV extends JFrame{
 
     public BTV() throws IOException, ClassNotFoundException {
         super("BTV");
-        this.setSize(600,400);
+        this.setSize(450,400);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
 
@@ -96,7 +96,7 @@ public class BTV extends JFrame{
 
 
         JLabel Description = new JLabel();
-        Description.setText("Перезагрузка каналов, сохранение при изменении + подключение к менеджеру");
+        Description.setText("<html>Перезагрузка каналов, сохранение при изменении<br>" + "подключение к менеджеру</html>");
         GridBagConstraints c = new GridBagConstraints();
         c.ipadx = 0;
         c.ipady = 0;
