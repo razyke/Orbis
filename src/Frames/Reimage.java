@@ -96,7 +96,7 @@ public class Reimage extends JFrame{
         });
 
 
-        description = new JLabel("<html>При нажатии кнопки<br>"+ "задаются настройки для<br>"+"указанных компьютеров</html>");
+        description = new JLabel("<html>При нажатии кнопки<br>"+ "задаются настройки питания<br>"+"для указанных компьютеров</html>");
         area = new JPanel();
         area.setBackground(Color.black);
         area.add(names);
@@ -108,7 +108,6 @@ public class Reimage extends JFrame{
         this.add(NCN,c);
         c.gridy=3;
         c.gridx=0;
-        //c.insets = new Insets(0,0,0,0);
        this.add(area,c);
         c.gridx = 2;
         c.insets.set(0,0,20,10);

@@ -53,6 +53,18 @@ public class srv extends JFrame {
         terminal.add(wce);
 
         name = new JTextField(4);
+        palitizator.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    Functions.LoggOff837();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
 
 
 

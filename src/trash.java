@@ -39,6 +39,31 @@ public class trash {
 
        // Functions.LoggOff101("z_petwmstm3610");
 
+       /* String[] pc = new String[1];
+        pc[0] = "wpet-w7e-p00558";
+
+        String[] comands = new String[]{"powercfg.exe -change -monitor-timeout-ac 15","powercfg.exe -change -disk-timeout-ac 0",
+        "powercfg.exe -change -standby-timeout-ac 0","powercfg.exe -change -hibernate-timeout-ac 0","powercfg.exe -change -monitor-timeout-dc 15",
+                "powercfg.exe -change -standby-timeout-dc 30","powercfg.exe -change -hibernate-timeout-dc 30"};
+
+                for (String names : pc){
+
+                    for (String make : comands){
+                        String cmd ="\\\\"+names+" "+ make;
+                        Runtime.getRuntime().exec(cmd);
+                    }
+
+                }
+                */
+
+
+
+
+
+
+
+
+
 
 
 

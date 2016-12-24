@@ -1,29 +1,29 @@
  SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE 
  services                                    0  Disc                        
  console                                     1  Conn                        
- rdp-tcp#0         Z_PETWMSTF3507            3  Active  rdpwd               
- rdp-tcp#5         Z_PETWMSTF3505            4  Active  rdpwd               
- rdp-tcp#10        z_petwmstm3607            5  Active  rdpwd               
+                   Z_PETWMSTF3203            2  Disc                        
+ rdp-tcp#2         Z_PETWMSTF3205            3  Active  rdpwd               
+ rdp-tcp#28        Z_PETWMSTF3201            4  Active  rdpwd               
  rdp-tcp#3         Z_PETWMSTM3216            6  Active  rdpwd               
- rdp-tcp#8         Z_PETWMSTF3604            7  Active  rdpwd               
- rdp-tcp#9         Z_PETWMSTF3608            8  Active  rdpwd               
- rdp-tcp#25        Z_PETWMSTF3202            9  Active  rdpwd               
- rdp-tcp#11        Z_PETWMSTF3607           10  Active  rdpwd               
- rdp-tcp#6         Z_PETWMSTF3501           11  Active  rdpwd               
- rdp-tcp#4         Z_PETWMSTM3502           12  Active  rdpwd               
- rdp-tcp#12        Z_PETWMSTF3207           13  Active  rdpwd               
- rdp-tcp#14        Z_PETWMSTM3508           14  Active  rdpwd               
- rdp-tcp#15        Z_PETWMSTM3601           15  Active  rdpwd               
- rdp-tcp#21        Z_PETWMSTF3205           16  Active  rdpwd               
- rdp-tcp#2         Z_PETWMSTM3610           17  Active  rdpwd               
- rdp-tcp#7         Z_PETWMSTF3504           18  Active  rdpwd               
- rdp-tcp#19        Z_PETWMSTF3606           20  Active  rdpwd               
- rdp-tcp#20        Z_PETWMSTF3610           22  Active  rdpwd               
- rdp-tcp#23        Z_PETWMSTM3510           23  Active  rdpwd               
- rdp-tcp#24        Z_PETWMSTF3204           24  Active  rdpwd               
- rdp-tcp#1         Z_PETWMSTF3506           26  Active  rdpwd               
- rdp-tcp#28        Z_PETWMSTM3511           28  Active  rdpwd               
- rdp-tcp#18        Z_PETWMSTM3503           29  Active  rdpwd               
- rdp-tcp#27        Z_PETWMSTF3502           30  Active  rdpwd               
- rdp-tcp#13        Z_PETWMSTM3204           33  Active  rdpwd               
+ rdp-tcp#5         Z_PETWMSTF3206            7  Active  rdpwd               
+ rdp-tcp#1         Z_PETWMSTF3602            8  Active  rdpwd               
+ rdp-tcp#13        Z_PETWMSTM3204            9  Active  rdpwd               
+ rdp-tcp#11        Z_PETWMSTM3602           10  Active  rdpwd               
+ rdp-tcp#26        Z_PETWMSTF3207           12  Active  rdpwd               
+ rdp-tcp#27        Z_PETWMSTF3601           13  Active  rdpwd               
+ rdp-tcp#7         Z_PETWMSTF3506           15  Active  rdpwd               
+ rdp-tcp#10        Z_PETWMSTF3608           16  Active  rdpwd               
+ rdp-tcp#29        Z_PETWMSTF3508           17  Active  rdpwd               
+ rdp-tcp#19        Z_PETWMSTF3604           19  Active  rdpwd               
+ rdp-tcp#20        Z_PETWMSTF3607           20  Active  rdpwd               
+ rdp-tcp#24        Z_PETWMSTM3502           21  Active  rdpwd               
+ rdp-tcp#21        Z_PETWMSTM3508           22  Active  rdpwd               
+ rdp-tcp#6         Z_PETWMSTM3601           23  Active  rdpwd               
+ rdp-tcp#14        Z_PETWMSTM3504           24  Active  rdpwd               
+ rdp-tcp#8         Z_PETWMSTM3510           30  Active  rdpwd               
+ rdp-tcp#32        Z_PETWMSTF3606           31  Active  rdpwd               
+ rdp-tcp#23        Z_PETWMSTM3503           32  Active  rdpwd               
+ rdp-tcp#31        Z_PETWMSTM3209           33  Active  rdpwd               
+ rdp-tcp#25        Z_PETWMSTM3801           35  Active  rdpwd               
+ rdp-tcp#4         Z_PETWMSTF3610           36  Active  rdpwd               
  rdp-tcp                                 65536  Listen                      

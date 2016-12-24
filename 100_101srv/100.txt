@@ -1,0 +1,24 @@
+ SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE 
+ services                                    0  Disc                        
+ console                                     1  Conn                        
+ rdp-tcp#0         PETSTRIZN                 2  Active  rdpwd               
+ rdp-tcp#11        petdmitre                 3  Active  rdpwd               
+ rdp-tcp#8         petgugaes                 4  Active  rdpwd               
+ rdp-tcp#13        petchubae                 5  Active  rdpwd               
+ rdp-tcp#4         petbaturna                6  Active  rdpwd               
+ rdp-tcp#18        petkima                   7  Active  rdpwd               
+ rdp-tcp#12        petgulyaga                8  Active  rdpwd               
+ rdp-tcp#7         petwmstw01                9  Active  rdpwd               
+ rdp-tcp#9         petchebui                10  Active  rdpwd               
+ rdp-tcp#5         petbogdal                11  Active  rdpwd               
+ rdp-tcp#10        petdmitrr                12  Active  rdpwd               
+ rdp-tcp#14        PETKUZNEL                13  Active  rdpwd               
+ rdp-tcp#15        petmotkoi                14  Active  rdpwd               
+ rdp-tcp#16        petteplye                15  Active  rdpwd               
+ rdp-tcp#17        peturusov                16  Active  rdpwd               
+                   petkolobea               17  Disc                        
+ rdp-tcp#2         petkutild                18  Active  rdpwd               
+ rdp-tcp#1         Petbondaal               19  Active  rdpwd               
+ rdp-tcp#3         petsmirnp                20  Active  rdpwd               
+ rdp-tcp#6         PETKONOPN                22  Active  rdpwd               
+ rdp-tcp                                 65536  Listen                      
