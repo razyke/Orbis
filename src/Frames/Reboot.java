@@ -41,6 +41,9 @@ public class Reboot extends JFrame {
 
         ImageIcon re = new ImageIcon("Media\\reboot2.png");
         reboot = new JButton("",re);
+        reboot.setBorderPainted(false);
+        reboot.setFocusPainted(false);
+        reboot.setContentAreaFilled(false);
         reboot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
