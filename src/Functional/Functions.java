@@ -134,18 +134,10 @@ public class Functions {
             }
 
             fileWriter.close();
-            //"\\RUSPET01-SRV101\C$\Program Files (x86)\Business Objects\BusinessObjects Enterprise 12.0\win32_x86\crystalras.exe" -service -name RUSPET01-SRV101.RAS   -ipport -restart
 
-
-            //ProcessBuilder cmd = new ProcessBuilder("Hibernate\\start.cmd");
-            //cmd.start();
-            File file=new File("Hibernate\\RH.cmd");
+            File file=new File("Hibernate\\Remove.bat");
             Desktop.getDesktop().open(file);
         }
 
-        public static void reportRestart() throws IOException {
-            ProcessBuilder cmd = new ProcessBuilder("100_101srv\\report.cmd");
-            cmd.start();
-        }
     }
 

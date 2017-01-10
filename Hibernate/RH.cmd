@@ -1,1 +1,0 @@
-PsExec.exe @hiblist.txt powercfg.cmd

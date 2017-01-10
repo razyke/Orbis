@@ -4,6 +4,8 @@ import com.sun.corba.se.spi.activation.ServerHelper;
 import com.sun.corba.se.spi.activation.ServerIdHelper;
 import com.sun.security.ntlm.Server;
 
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.HashMap;
@@ -54,8 +56,19 @@ public class trash {
                     }
 
                 }
-                */
 
+
+        Desktop desktop = null;
+        if (Desktop.isDesktopSupported()) {
+            desktop = Desktop.getDesktop();
+        }
+
+        try {
+            desktop.open(new File("C:\\Program Files"));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+*/
 
 
 

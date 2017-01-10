@@ -95,6 +95,8 @@ public class Reimage extends JFrame{
             }
         });
 
+        AR.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
 
         description = new JLabel("<html>При нажатии кнопки<br>"+ "задаются настройки питания<br>"+"для указанных компьютеров</html>");
         area = new JPanel();

@@ -16,7 +16,6 @@ public class srv extends JFrame {
     JRadioButton wce;
     ButtonGroup terminal;
     String fullname = "";
-    JButton restartRS;
 
     public srv() {
 
@@ -36,18 +35,7 @@ public class srv extends JFrame {
 
         wm6 = new JRadioButton("WM6",true);
         wce = new JRadioButton("WCE",false);
-        restartRS = new JButton("Restart report servis( 101)");
-        restartRS.setFont(new Font("serif",Font.PLAIN,12));
-        restartRS.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    Functions.reportRestart();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        });
+
 
         terminal.add(wm6);
         terminal.add(wce);
@@ -69,6 +57,10 @@ public class srv extends JFrame {
 
 
 
+        logoff101.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        palitizator.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
+
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(10,10,10,10);
@@ -81,16 +73,9 @@ public class srv extends JFrame {
         c.gridx++;
         this.add(wce,c);
         c.gridy++;
-        c.insets = new Insets(30,0,0,20);
-        c.gridx--;
+        c.insets = new Insets(30,0,10,20);
+
         this.add(palitizator,c);
-        c.gridx++;
-        c.insets.set(30,0,0,0);
-        this.add(restartRS,c);
-
-        c.gridwidth =2;
-        c.gridheight = 1;
-
 
         fullname = "z_petwmstm";
 

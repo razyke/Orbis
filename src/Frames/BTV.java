@@ -41,6 +41,12 @@ public class BTV extends JFrame{
         JButton reboot3 = new JButton("",re);
         JButton reboot4 = new JButton("",re);
         JButton manager = new JButton("Manager");
+        save.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        reboot1.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        reboot2.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        reboot3.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        reboot4.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        manager.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         reboot1.addActionListener(new ActionListener() {
             @Override

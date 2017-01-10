@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.io.IOException;
 
 public class Main_Frame extends JFrame{
@@ -84,6 +85,24 @@ JButton B7;
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Reimage();
+            }
+        });
+
+        B3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                Desktop desktop = null;
+                if (Desktop.isDesktopSupported()) {
+                    desktop = Desktop.getDesktop();
+                }
+
+                try {
+                    desktop.open(new File("S:\\Information Resources\\Help Desk\\01-Manual\\Main"));
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+
             }
         });
 

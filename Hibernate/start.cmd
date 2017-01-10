@@ -1,1 +1,0 @@
-start Hibernate\RH.cmd
