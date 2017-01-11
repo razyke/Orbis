@@ -78,7 +78,7 @@ public class Main_Frame extends JFrame {
             }
         });
 
-<<<<<<< HEAD
+
         B3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -97,13 +97,12 @@ public class Main_Frame extends JFrame {
             }
         });
 
-=======
         cont.add(B3, new GridBagConstraints(0, 1, 1, 1, 0, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(40, 0, 0, 50), 0, 0));
         cont.add(B4, new GridBagConstraints(1, 1, 1, 1, 0, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(40, 50, 0, 0), 0, 0));
         cont.add(B2, new GridBagConstraints(0, 2, 1, 1, 0, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(40, 0, 0, 50), 0, 0));
         cont.add(B6, new GridBagConstraints(1, 2, 1, 1, 0, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(40, 50, 0, 0), 0, 0));
         cont.add(B7, new GridBagConstraints(0, 3, 3, 1, 0, 1, GridBagConstraints.NORTH, GridBagConstraints.HORIZONTAL, new Insets(40, 0, 0, 0), 0, 0));
->>>>>>> refs/remotes/origin/testeing
+
 
         this.add(cont);
         this.setVisible(true);

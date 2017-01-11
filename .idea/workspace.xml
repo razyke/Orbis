@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e99ea74-5ca9-4028-9389-c0c3a017c3ee" name="Default" comment="Update">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$1.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$2.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$3.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$4.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$5.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$BgPanel.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame$BgPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame.class" afterPath="$PROJECT_DIR$/out/production/Orbis/Frames/Main_Frame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Orbis/trash.class" afterPath="$PROJECT_DIR$/out/production/Orbis/trash.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frames/Main_Frame.java" afterPath="$PROJECT_DIR$/src/Frames/Main_Frame.java" />
     </list>
     <ignored path="Orbis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frames/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,15 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main_Frame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main_Frame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Frames/Main_Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding>
-                <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-                <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,6 +191,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,9 +258,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -724,10 +730,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -783,10 +786,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="138" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="138" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -842,10 +842,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="52" column="138" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="138" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -861,10 +858,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -890,10 +884,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,10 +901,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,10 +918,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,14 +937,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/awt/GridBagConstraints.java" />
-    <entry file="file://$PROJECT_DIR$/src/Frames/Reboot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Functional/Functions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
@@ -1008,21 +985,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frames/Main_Frame.java">
+    <entry file="file://$PROJECT_DIR$/src/Frames/Reboot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <marker date="1484168985102" expanded="true" signature="24:30" ph="..." />
-            <marker date="1484168985102" expanded="true" signature="4227:4233" ph="{...}" />
-          </folding>
+        <state relative-caret-position="595">
+          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frames/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frames/Main_Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
           <folding />
         </state>
       </provider>
