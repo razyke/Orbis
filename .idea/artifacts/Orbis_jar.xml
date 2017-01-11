@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Orbis:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Orbis_jar</output-path>
+    <root id="archive" name="Orbis.jar">
+      <element id="module-output" name="Orbis" />
+    </root>
+  </artifact>
+</component>
