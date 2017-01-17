@@ -25,6 +25,8 @@ public class Reimage extends JFrame{
         this.setSize(600,400);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
+        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon.png");
+        this.setIconImage(im);
 
 
         NCN1 = new JLabel("WPET-");

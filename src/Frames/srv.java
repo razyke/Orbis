@@ -16,6 +16,8 @@ public class srv extends JFrame {
     JRadioButton wce;
     ButtonGroup terminal;
     String fullname = "";
+    JLabel info;
+    JPanel BL;
 
     public srv() {
 
@@ -23,6 +25,8 @@ public class srv extends JFrame {
         this.setSize(600, 400);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
+        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon.png");
+        this.setIconImage(im);
 
         GridBagConstraints c = new GridBagConstraints();
 
@@ -60,13 +64,19 @@ public class srv extends JFrame {
         logoff101.setCursor(new Cursor(Cursor.HAND_CURSOR));
         palitizator.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
+        BL = new JPanel();
+        info = new JLabel("*");
+        info.setToolTipText("Если не получилось, делать вручную (А тот терминал потом перезалить и выдать правильное имя)");
+        BL.add(logoff101);
+        BL.add(info);
+
 
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(10,10,10,10);
         this.add(name,c);
         c.gridx++;
-        this.add(logoff101,c);
+        this.add(BL,c);
         c.gridy++;
         c.gridx--;
         this.add(wm6,c);

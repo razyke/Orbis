@@ -24,7 +24,7 @@ public class Main_Frame extends JFrame {
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
 
-        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon-2.png");
+        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon.png");
         this.setIconImage(im);
 
         setContentPane(new BgPanel());
@@ -35,7 +35,7 @@ public class Main_Frame extends JFrame {
 
         B2 = new JButton("BTV");
         B3 = new JButton("Manuals");
-        B4 = new JButton("Re-Image");
+        B4 = new JButton("Hibernate");
         B6 = new JButton("101. 100 SRV");
         B7 = new JButton("Reboot");
 
@@ -87,11 +87,11 @@ public class Main_Frame extends JFrame {
                 if (Desktop.isDesktopSupported()) {
                     desktop = Desktop.getDesktop();
                 }
-
                 try {
                     desktop.open(new File("S:\\Information Resources\\Help Desk\\01-Manual\\Main"));
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
+
                 }
 
             }

@@ -19,6 +19,8 @@ public class Reboot extends JFrame {
         this.setSize(300, 100);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
+        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon.png");
+        this.setIconImage(im);
 
         namePC = new JTextField(10);
         namePC.setText("wpet-w7e-");

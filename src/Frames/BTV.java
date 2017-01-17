@@ -19,6 +19,8 @@ public class BTV extends JFrame{
         this.setSize(450,400);
         this.setResizable(false);
         this.setLayout(new GridBagLayout());
+        Image im = Toolkit.getDefaultToolkit().getImage("Media\\icon.png");
+        this.setIconImage(im);
 
         tv = Functions.getLinks();
 
